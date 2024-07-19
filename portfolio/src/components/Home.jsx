@@ -8,7 +8,7 @@ const Home = () => {
 
         <li>
 
-        <a className='container'>
+        <a className='container pl-0'>
           <img src="./profile.png" alt="logo"className='logo-container' />
         <span className='name'> Pradeep Sakthi</span> 
         </a>
