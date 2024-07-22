@@ -11,7 +11,7 @@ function App() {
   const [background,setbackground]=useState('#feb47b')
   const getSystemTheme = () => {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setbackground('#36273f')
+      setbackground('#601d87')
       setDiv1('text-light bg-cyan-300 text-cyan-900')
       return 'Dark';
     }
@@ -21,7 +21,7 @@ function App() {
   const [theme, setTheme] = useState(getSystemTheme);
   const handleThemeChange = (newTheme) => {
     setTheme(newTheme);
-    setbackground((prevBack)=>(prevBack==='#feb47b'?'#36273f':'#feb47b'))
+    setbackground((prevBack)=>(prevBack==='#feb47b'?'#601d87':'#feb47b'))
   };
   return (
     <>
