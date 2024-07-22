@@ -15,6 +15,7 @@ function App() {
       setDiv1('text-light bg-cyan-300 text-cyan-900')
       return 'Dark';
     }
+    setDiv1('text-muted bg-cyan-300 text-cyan-900')
     setbackground('#ff8f5f')
     return 'Light';
   };
@@ -22,10 +23,12 @@ function App() {
   const handleThemeChange = (newTheme) => {
     setTheme(newTheme);
     setbackground((prevBack)=>(prevBack==='#feb47b'?'#601d87':'#feb47b'))
+    setDiv1((prevDiv)=>(prevDiv==='text-muted bg-cyan-300 text-cyan-900'?'text-light bg-cyan-300 text-cyan-900':'text-muted bg-cyan-300 text-cyan-900'))
+
   };
   return (
     <>
-    <div className="text-muted bg-cyan-300 text-cyan-900">
+    <div className={div1}>
     <div className="position-fixed top-0 start-0 w-100 h-100" style={{ zIndex: -10 }}>
     <div className="position-absolute top-0 start-0 w-100 h-100" style={{
   zIndex: -2,
